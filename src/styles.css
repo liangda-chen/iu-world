@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f9f0ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 標題樣式 */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #8a2be2;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* 個人資料區塊 */
+.profile-section {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.profile-content {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-video {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* 按鈕樣式 */
+.start-button, .restart-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #8a2be2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.start-button:hover, .restart-button:hover {
+  background-color: #7b1fa2;
+}
+
+/* 測驗區塊 */
+.quiz-section {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.quiz-progress {
+  text-align: right;
+  margin-bottom: 15px;
+  color: #8a2be2;
+  font-weight: bold;
+}
+
+.question-container h3 {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.options-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.option-button {
+  padding: 12px;
+  background-color: #f3e5ff;
+  border: 1px solid #d1c4e9;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.option-button:hover:not(.disabled) {
+  background-color: #e1bee7;
+}
+
+.option-button.correct {
+  background-color: #c8e6c9;
+  border-color: #81c784;
+}
+
+.option-button.incorrect {
+  background-color: #ffcdd2;
+  border-color: #e57373;
+}
+
+.option-button.disabled {
+  cursor: not-allowed;
+}
+
+.feedback {
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.feedback .correct {
+  color: #2e7d32;
+}
+
+.feedback .incorrect {
+  color: #c62828;
+}
+
+/* 結果區塊 */
+.result-section {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.result-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.score-display {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.score-display span {
+  color: #8a2be2;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.result-message {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #8a2be2;
+}
+.timer {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #8a2be2;
+  font-weight: bold;
+}
+
+.timer.warning {
+  color: #ff5722;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+/* 時間到的反饋樣式 */
+.feedback.timeout {
+  color: #ff5722;
+}
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2rem;
+  color: #8a2be2;
+}
+
+/* 測驗標題 */
+.quiz-section h2 {
+  text-align: center;
+  color: #8a2be2;
+  margin-bottom: 20px;
+}
+
+/* 計時器警告 */
+.timer.warning {
+  color: #ff5722;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+/* 時間到反饋 */
+.feedback.timeout {
+  color: #ff5722;
+  font-weight: bold;
+}
