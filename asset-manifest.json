@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/iu-world/static/css/main.9be31714.css",
+    "main.js": "/iu-world/static/js/main.4518b22a.js",
+    "static/media/iu-video.mp4": "/iu-world/static/media/iu-video.96912b335ef6c1260fe4.mp4",
+    "static/media/iu-profile.jpg": "/iu-world/static/media/iu-profile.3b301fcf936a979f19fb.jpg",
+    "static/media/iu-quiz.jpg": "/iu-world/static/media/iu-quiz.86d64bad18113f2baad0.jpg",
+    "index.html": "/iu-world/index.html",
+    "main.9be31714.css.map": "/iu-world/static/css/main.9be31714.css.map",
+    "main.4518b22a.js.map": "/iu-world/static/js/main.4518b22a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9be31714.css",
+    "static/js/main.4518b22a.js"
+  ]
+}
